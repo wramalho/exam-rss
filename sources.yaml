@@ -1,0 +1,16 @@
+sources:
+  - id: "mongodb-release-notes"
+    name: "MongoDB Release Notes"
+    url: "https://www.mongodb.com/docs/manual/release-notes/"
+    type: "tech_doc"
+    mode: "update_tracker"
+    # We select the main content area to track changes. If it changes, we notify.
+    css_selector: "main"
+
+  - id: "lei-14133-licitacoes"
+    name: "Lei 14.133 (Licitações)"
+    url: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+    type: "brazilian_law"
+    mode: "drip_feed"
+    # We want to chunk the law by articles (Art. 1º, Art. 2º, etc)
+    chunk_by: "Art."
