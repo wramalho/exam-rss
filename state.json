@@ -4,13 +4,20 @@
       "lastHash": "155b0b73ba931e0c5a51b377e7c5f86564bfe008fe544b2534f5d556852cfb76"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 5
+      "currentIndex": 6
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-4",
+      "id": "lei-14133-licitacoes-chunk-5",
+      "title": "Lei 14.133 (Licitações) - Part 6",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk5",
+      "content": "<p>Art. \n\t3º Não se subordinam ao regime desta Lei:</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art3i\"></a>I - \n\tcontratos que tenham por objeto operação de crédito, interno ou externo, e \n\tgestão de dívida pública, incluídas as contratações de agente financeiro e a \n\tconcessão de garantia relacionadas a esses contratos;</span></p><p>\n\t<a name=\"art3i\"></a>I - \n\tcontratos que tenham por objeto operação de crédito, interno ou externo, e \n\tgestão de dívida pública, incluídas as contratações de agente financeiro e a \n\tconcessão de garantia relacionadas a esses contratos;</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art3ii\"></a>II - \n\tcontratações sujeitas a normas previstas em legislação própria.</span></p><p>\n\t<a name=\"art3ii\"></a>II - \n\tcontratações sujeitas a normas previstas em legislação própria.</p>",
+      "date": "2026-05-20T09:03:10.464Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 5",
+      "id": "lei-14133-licitacoes-chunk-4",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk4",
       "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art3\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t3º Não se subordinam ao regime desta Lei:</span></p>",
       "date": "2026-05-19T09:04:44.053Z"
