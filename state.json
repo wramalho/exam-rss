@@ -4,13 +4,20 @@
       "lastHash": "155b0b73ba931e0c5a51b377e7c5f86564bfe008fe544b2534f5d556852cfb76"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 25
+      "currentIndex": 26
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-24",
+      "id": "lei-14133-licitacoes-chunk-25",
+      "title": "Lei 14.133 (Licitações) - Part 26",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk25",
+      "content": "<p>Art. \n\t13. Os atos praticados no processo licitatório são públicos, ressalvadas as \n\thipóteses de informações cujo sigilo seja imprescindível à segurança da \n\tsociedade e do Estado, na forma da lei.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art13p\"></a>Parágrafo único. A publicidade será diferida:</span></p><p>\n\t<a name=\"art13p\"></a>Parágrafo único. A publicidade será diferida:</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art13pi\"></a>I - \n\tquanto ao conteúdo das propostas, até a respectiva abertura;</span></p><p>\n\t<a name=\"art13pi\"></a>I - \n\tquanto ao conteúdo das propostas, até a respectiva abertura;</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art13pii\"></a>II - \n\tquanto ao orçamento da Administração, nos termos do <a href=\"#art24\">art. 24 desta Lei.</a></span></p><p>\n\t<a name=\"art13pii\"></a>II - \n\tquanto ao orçamento da Administração, nos termos do <a href=\"#art24\">art. 24 desta Lei.</a></p>",
+      "date": "2026-06-09T09:04:05.347Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 25",
+      "id": "lei-14133-licitacoes-chunk-24",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk24",
       "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art13\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t13. Os atos praticados no processo licitatório são públicos, ressalvadas as \n\thipóteses de informações cujo sigilo seja imprescindível à segurança da \n\tsociedade e do Estado, na forma da lei.</span></p>",
       "date": "2026-06-08T09:31:26.307Z"
