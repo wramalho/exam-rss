@@ -4,13 +4,20 @@
       "lastHash": "155b0b73ba931e0c5a51b377e7c5f86564bfe008fe544b2534f5d556852cfb76"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 41
+      "currentIndex": 42
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-40",
+      "id": "lei-14133-licitacoes-chunk-41",
+      "title": "Lei 14.133 (Licitações) - Part 42",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk41",
+      "content": "<p>Art. \n\t21.<b> </b>A Administração poderá convocar, com antecedência mínima de 8 \n\t(oito) dias úteis, audiência pública, presencial ou a distância, na forma \n\teletrônica, sobre licitação que pretenda realizar, com disponibilização \n\tprévia de informações pertinentes, inclusive de estudo técnico preliminar e \n\telementos do edital de licitação, e com possibilidade de manifestação de \n\ttodos os interessados.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art21p\"></a>Parágrafo único. A Administração também poderá submeter a licitação a prévia \n\tconsulta pública, mediante a disponibilização de seus elementos a todos os \n\tinteressados, que poderão formular sugestões no prazo fixado.</span></p><p>\n\t<a name=\"art21p\"></a>Parágrafo único. A Administração também poderá submeter a licitação a prévia \n\tconsulta pública, mediante a disponibilização de seus elementos a todos os \n\tinteressados, que poderão formular sugestões no prazo fixado.</p>",
+      "date": "2026-06-25T09:01:52.303Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 41",
+      "id": "lei-14133-licitacoes-chunk-40",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk40",
       "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art21\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t21.<b> </b>A Administração poderá convocar, com antecedência mínima de 8 \n\t(oito) dias úteis, audiência pública, presencial ou a distância, na forma \n\teletrônica, sobre licitação que pretenda realizar, com disponibilização \n\tprévia de informações pertinentes, inclusive de estudo técnico preliminar e \n\telementos do edital de licitação, e com possibilidade de manifestação de \n\ttodos os interessados.</span></p>",
       "date": "2026-06-24T09:02:30.831Z"
