@@ -4,13 +4,20 @@
       "lastHash": "4fa64655408cbe03bdc2bf4b39cabe8ed8c2844c1d4cc423de2595c9b8d5459d"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 101
+      "currentIndex": 102
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-100",
+      "id": "lei-14133-licitacoes-chunk-101",
+      "title": "Lei 14.133 (Licitações) - Part 102",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk101",
+      "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art50\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t50. Nas contratações de serviços com regime de dedicação exclusiva de mão de \n\tobra, o contratado deverá apresentar, quando solicitado pela Administração, \n\tsob pena de multa, comprovação do cumprimento das obrigações trabalhistas e \n\tcom o Fundo de Garantia do Tempo de Serviço (FGTS) em relação aos empregados \n\tdiretamente envolvidos na execução do contrato, em especial quanto ao:</span></p>",
+      "date": "2026-08-24T08:35:51.224Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 101",
+      "id": "lei-14133-licitacoes-chunk-100",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk100",
       "content": "<p>Art. \n\t49. A Administração poderá, mediante justificativa expressa, contratar mais \n\tde uma empresa ou instituição para executar o mesmo serviço, desde que essa \n\tcontratação não implique perda de economia de escala, quando:</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art49i\"></a>I - \n\to objeto da contratação puder ser executado de forma concorrente e \n\tsimultânea por mais de um contratado; e</span></p><p>\n\t<a name=\"art49i\"></a>I - \n\to objeto da contratação puder ser executado de forma concorrente e \n\tsimultânea por mais de um contratado; e</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art49ii\"></a>II - \n\ta múltipla execução for conveniente para atender à Administração.</span></p><p>\n\t<a name=\"art49ii\"></a>II - \n\ta múltipla execução for conveniente para atender à Administração.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art49p\"></a>Parágrafo único. Na hipótese prevista no <b>caput</b> deste artigo, a \n\tAdministração deverá manter o controle individualizado da execução do objeto \n\tcontratual relativamente a cada um dos contratados.</span></p><p>\n\t<a name=\"art49p\"></a>Parágrafo único. Na hipótese prevista no <b>caput</b> deste artigo, a \n\tAdministração deverá manter o controle individualizado da execução do objeto \n\tcontratual relativamente a cada um dos contratados.</p>",
       "date": "2026-08-23T08:17:39.463Z"
@@ -350,13 +357,6 @@
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk53",
       "content": "<p>Art. \n\t27.<b> </b>Será divulgada, em sítio eletrônico oficial, a cada exercício \n\tfinanceiro, a relação de empresas favorecidas em decorrência do disposto no \n\t<a href=\"#art26\">art. 26 desta Lei</a>, com indicação do volume de recursos destinados a cada uma \n\tdelas.</p><p><b>\n\t<span style=\"font-size:10.0pt;font-family:\n&quot;Arial&quot;,sans-serif\"><a name=\"tituloiicapituloiisecaoii\"></a>Seção II</span></b></p><p><a name=\"tituloiicapituloiisecaoii\"></a>Seção II</p><p><b>\n\t<span style=\"font-size:10.0pt;font-family:\n&quot;Arial&quot;,sans-serif\">Das Modalidades de Licitação</span></b></p><p>Das Modalidades de Licitação</p>",
       "date": "2026-07-07T10:45:06.506Z"
-    },
-    {
-      "title": "Lei 14.133 (Licitações) - Part 53",
-      "id": "lei-14133-licitacoes-chunk-52",
-      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk52",
-      "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art27\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t27.<b> </b>Será divulgada, em sítio eletrônico oficial, a cada exercício \n\tfinanceiro, a relação de empresas favorecidas em decorrência do disposto no \n\t<a href=\"#art26\">art. 26 desta Lei</a>, com indicação do volume de recursos destinados a cada uma \n\tdelas.</span></p>",
-      "date": "2026-07-06T11:54:58.564Z"
     }
   ]
 }
