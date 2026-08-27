@@ -4,13 +4,20 @@
       "lastHash": "9cf027c3ea70d7b7a20afa2222dcca7ad0111e7a77adf6d582fc8c77d3750f96"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 104
+      "currentIndex": 105
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-103",
+      "id": "lei-14133-licitacoes-chunk-104",
+      "title": "Lei 14.133 (Licitações) - Part 105",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk104",
+      "content": "<p>Art. \n\t51. Ressalvado o disposto no <a href=\"#art74v\">inciso V do <b>caput</b> do art. 74 desta Lei</a>, \n\ta locação de imóveis deverá ser precedida de licitação e avaliação prévia do \n\tbem, do seu estado de conservação, dos custos de adaptações e do prazo de \n\tamortização dos investimentos necessários.</p><p><b>\n\t<span style=\"font-size:10.0pt;font-family:\n&quot;Arial&quot;,sans-serif\"><a name=\"tituloiicapituloiisecaoivsubsecaov\"></a>Subseção V</span></b></p><p><a name=\"tituloiicapituloiisecaoivsubsecaov\"></a>Subseção V</p><p><b>\n\t<span style=\"font-size:10.0pt;font-family:\n&quot;Arial&quot;,sans-serif\">Das Licitações Internacionais</span></b></p><p>Das Licitações Internacionais</p>",
+      "date": "2026-08-27T18:37:13.335Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 104",
+      "id": "lei-14133-licitacoes-chunk-103",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk103",
       "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art51\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t51. Ressalvado o disposto no <a href=\"#art74v\">inciso V do <b>caput</b> do art. 74 desta Lei</a>, \n\ta locação de imóveis deverá ser precedida de licitação e avaliação prévia do \n\tbem, do seu estado de conservação, dos custos de adaptações e do prazo de \n\tamortização dos investimentos necessários.</span></p>",
       "date": "2026-08-26T08:30:19.541Z"
@@ -350,13 +357,6 @@
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk57",
       "content": "<p>Art. \n\t29. A concorrência e o pregão seguem o rito procedimental comum a que se \n\trefere o <a href=\"#art17\">art. 17 desta Lei</a>, adotando-se o pregão sempre que o objeto possuir \n\tpadrões de desempenho e qualidade que possam ser objetivamente definidos \n\tpelo edital, por meio de especificações usuais de mercado.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art29p\"></a>Parágrafo único. O pregão não se aplica às contratações de serviços técnicos \n\tespecializados de natureza predominantemente intelectual e de obras e \n\tserviços de engenharia, exceto os serviços de engenharia de que trata a \n\t<a href=\"#art6xxia\">alínea a do inciso XXI do <b>caput</b> do art. 6º desta Lei</a>.</span></p><p>\n\t<a name=\"art29p\"></a>Parágrafo único. O pregão não se aplica às contratações de serviços técnicos \n\tespecializados de natureza predominantemente intelectual e de obras e \n\tserviços de engenharia, exceto os serviços de engenharia de que trata a \n\t<a href=\"#art6xxia\">alínea a do inciso XXI do <b>caput</b> do art. 6º desta Lei</a>.</p>",
       "date": "2026-07-11T09:16:46.902Z"
-    },
-    {
-      "title": "Lei 14.133 (Licitações) - Part 57",
-      "id": "lei-14133-licitacoes-chunk-56",
-      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk56",
-      "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art29\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t29. A concorrência e o pregão seguem o rito procedimental comum a que se \n\trefere o <a href=\"#art17\">art. 17 desta Lei</a>, adotando-se o pregão sempre que o objeto possuir \n\tpadrões de desempenho e qualidade que possam ser objetivamente definidos \n\tpelo edital, por meio de especificações usuais de mercado.</span></p>",
-      "date": "2026-07-10T10:43:58.035Z"
     }
   ]
 }
