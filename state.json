@@ -4,13 +4,20 @@
       "lastHash": "ff5d7606e6802cad7728f337f723e3dd4587e8a0f37d224228dbb60a5a3e4e2a"
     },
     "lei-14133-licitacoes": {
-      "currentIndex": 170
+      "currentIndex": 171
     }
   },
   "feedItems": [
     {
-      "id": "lei-14133-licitacoes-chunk-169",
+      "id": "lei-14133-licitacoes-chunk-170",
+      "title": "Lei 14.133 (Licitações) - Part 171",
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk170",
+      "content": "<p>Art. \n\t84. O prazo de vigência da ata de registro de preços será de 1 (um) ano e \n\tpoderá ser prorrogado, por igual período, desde que comprovado o preço \n\tvantajoso.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art84p\"></a>Parágrafo único. O contrato decorrente da ata de registro de preços terá sua \n\tvigência estabelecida em conformidade com as disposições nela contidas.</span></p><p>\n\t<a name=\"art84p\"></a>Parágrafo único. O contrato decorrente da ata de registro de preços terá sua \n\tvigência estabelecida em conformidade com as disposições nela contidas.</p>",
+      "date": "2026-11-23T19:38:20.812Z"
+    },
+    {
       "title": "Lei 14.133 (Licitações) - Part 170",
+      "id": "lei-14133-licitacoes-chunk-169",
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk169",
       "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art84\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t84. O prazo de vigência da ata de registro de preços será de 1 (um) ano e \n\tpoderá ser prorrogado, por igual período, desde que comprovado o preço \n\tvantajoso.</span></p>",
       "date": "2026-11-22T15:46:08.881Z"
@@ -350,13 +357,6 @@
       "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk124",
       "content": "<p>Art. \n\t61. Definido o resultado do julgamento, a Administração poderá negociar \n\tcondições mais vantajosas com o primeiro colocado.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art61§1\"></a>§ 1º \n\tA negociação poderá ser feita com os demais licitantes, segundo a ordem de \n\tclassificação inicialmente estabelecida, quando o primeiro colocado, mesmo \n\tapós a negociação, for desclassificado em razão de sua proposta permanecer \n\tacima do preço máximo definido pela Administração.</span></p><p>\n\t<a name=\"art61§1\"></a>§ 1º \n\tA negociação poderá ser feita com os demais licitantes, segundo a ordem de \n\tclassificação inicialmente estabelecida, quando o primeiro colocado, mesmo \n\tapós a negociação, for desclassificado em razão de sua proposta permanecer \n\tacima do preço máximo definido pela Administração.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"art61§2\"></a>§ 2º \n\tA negociação será conduzida por agente de contratação ou comissão de \n\tcontratação, na forma de regulamento, e, depois de concluída, terá seu \n\tresultado divulgado a todos os licitantes e anexado aos autos do processo \n\tlicitatório.</span></p><p>\n\t<a name=\"art61§2\"></a>§ 2º \n\tA negociação será conduzida por agente de contratação ou comissão de \n\tcontratação, na forma de regulamento, e, depois de concluída, terá seu \n\tresultado divulgado a todos os licitantes e anexado aos autos do processo \n\tlicitatório.</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">\n\t<a name=\"tituloiicapitulovi\"></a>CAPÍTULO VI</span></p><p>\n\t<a name=\"tituloiicapitulovi\"></a>CAPÍTULO VI</p><p>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">DA \n\tHABILITAÇÃO</span></p><p>DA \n\tHABILITAÇÃO</p>",
       "date": "2026-09-16T12:56:00.851Z"
-    },
-    {
-      "title": "Lei 14.133 (Licitações) - Part 124",
-      "id": "lei-14133-licitacoes-chunk-123",
-      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm#chunk123",
-      "content": "<p>\n\t<span style=\"font-size: 10.0pt; font-family: Arial,sans-serif\">\n\t<a name=\"art61\"></a></span>\n\t<span style=\"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif\">Art. \n\t61. Definido o resultado do julgamento, a Administração poderá negociar \n\tcondições mais vantajosas com o primeiro colocado.</span></p>",
-      "date": "2026-09-15T12:59:01.793Z"
     }
   ]
 }
