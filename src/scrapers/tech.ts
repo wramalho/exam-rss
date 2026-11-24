@@ -1,6 +1,7 @@
 import * as cheerio from "cheerio";
 import crypto from "crypto";
 import { Source } from "../config.js";
+import { fetchText } from "../http.js";
 
 function hashString(str: string): string {
   return crypto.createHash("sha256").update(str).digest("hex");
@@ -8,14 +9,7 @@ function hashString(str: string): string {
 
 export async function scrapeTechUpdate(source: Source, lastHash?: string): Promise<{ content: string | null; newHash: string }> {
   try {
-    const response = await fetch(source.url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-      }
-    });
-    if (!response.ok) throw new Error(`Failed to fetch ${source.url}`);
-    
-    const html = await response.text();
+    const html = await fetchText(source.url);
     const $ = cheerio.load(html);
 
     const selector = source.css_selector || "body";
@@ -30,7 +24,7 @@ export async function scrapeTechUpdate(source: Source, lastHash?: string): Promi
     contentElement.find("script, style, nav, footer").remove();
     
     // We hash the raw text to detect actual content changes, ignoring minor HTML formatting changes
-    const textContent = contentElement.text().replace(/\\s+/g, " ").trim();
+    const textContent = contentElement.text().replace(/\s+/g, " ").trim();
     const currentHash = hashString(textContent);
 
     if (currentHash !== lastHash) {

@@ -1,5 +1,5 @@
 import path from "path";
-import crypto from "crypto";
+import fs from "fs/promises";
 import { loadConfig, loadState, saveState, FeedItem } from "./config.js";
 import { scrapeTechUpdate } from "./scrapers/tech.js";
 import { scrapeLawDripFeed } from "./scrapers/law.js";
@@ -60,7 +60,7 @@ async function main() {
           console.log(`-> Drip-feeding item index ${currentIndex} for ${source.name}.`);
           
           // Try to extract a title from the content (e.g. "Art. X")
-          const titleMatch = content.match(/Art\\.\\s*\\d+º?/i);
+          const titleMatch = content.replace(/\s+/g, " ").match(/Art\.\s*\d+(?:-[A-Z])?º?/i);
           const titleSuffix = titleMatch ? ` - ${titleMatch[0]}` : ` - Part ${currentIndex + 1}`;
 
           newFeedItems.push({
@@ -77,8 +77,14 @@ async function main() {
     }
   }
 
-  // Merge new items with old items
-  let allItems = [...newFeedItems, ...state.feedItems];
+  // Merge new items with old items, deduplicating by id (newest wins)
+  const seen = new Set<string>();
+  let allItems: FeedItem[] = [];
+  for (const item of [...newFeedItems, ...state.feedItems]) {
+    if (seen.has(item.id)) continue;
+    seen.add(item.id);
+    allItems.push(item);
+  }
   
   // Sort descending by date
   allItems.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -91,7 +97,7 @@ async function main() {
   await saveState(STATE_PATH, state);
 
   // Create public dir if not exists
-  await import("fs/promises").then(fs => fs.mkdir(path.join(ROOT_DIR, "public"), { recursive: true }));
+  await fs.mkdir(path.join(ROOT_DIR, "public"), { recursive: true });
 
   // Generate XML
   await generateRSS(allItems, FEED_OUTPUT_PATH);

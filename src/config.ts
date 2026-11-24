@@ -28,6 +28,7 @@ const FeedItemSchema = z.object({
   link: z.string(),
   content: z.string(),
   date: z.string(), // Store as ISO string
+  author: z.string().optional(),
 });
 
 export type FeedItem = z.infer<typeof FeedItemSchema>;
