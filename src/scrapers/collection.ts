@@ -51,11 +51,11 @@ export function toIsoDate(rawDate: string | undefined, fallbackIso: string): str
   if (!rawDate) return fallbackIso;
   const trimmed = rawDate.trim();
 
-  // Handle Brazilian DD/MM/YYYY format used by JOTA listing cards.
-  const brMatch = trimmed.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-  if (brMatch) {
-    const [, day, month, year] = brMatch;
-    return new Date(`${year}-${month}-${day}T12:00:00-03:00`).toISOString();
+  // Handle Brazilian DD/MM/YYYY [HHhMM] formats used by JOTA and Gov.br Plone.
+  const brDateTimeMatch = trimmed.match(/^(\d{2})\/(\d{2})\/(\d{4})(?:\s+(\d{2})[h:](\d{2}))?$/);
+  if (brDateTimeMatch) {
+    const [, day, month, year, hour = "12", minute = "00"] = brDateTimeMatch;
+    return new Date(`${year}-${month}-${day}T${hour}:${minute}:00-03:00`).toISOString();
   }
 
   const parsed = new Date(trimmed);

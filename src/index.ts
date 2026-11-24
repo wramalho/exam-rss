@@ -5,6 +5,7 @@ import { scrapeTechUpdate } from "./scrapers/tech.js";
 import { scrapeLawDripFeed } from "./scrapers/law.js";
 import { scrapeRssFeed } from "./scrapers/rss.js";
 import { scrapeJotaColumn } from "./scrapers/jota.js";
+import { scrapeGovBrNews } from "./scrapers/govbr.js";
 import { generateRSS } from "./feed.js";
 import { fileURLToPath } from "url";
 
@@ -74,6 +75,11 @@ async function main() {
         newFeedItems.push(...items);
       } else if (source.mode === "jota_column") {
         const { items, seenIds } = await scrapeJotaColumn(source, sourceState.seenIds);
+        state.sources[source.id] = { ...sourceState, seenIds };
+        console.log(`-> Found ${items.length} new item(s) for ${source.name}.`);
+        newFeedItems.push(...items);
+      } else if (source.mode === "govbr_news") {
+        const { items, seenIds } = await scrapeGovBrNews(source, sourceState.seenIds);
         state.sources[source.id] = { ...sourceState, seenIds };
         console.log(`-> Found ${items.length} new item(s) for ${source.name}.`);
         newFeedItems.push(...items);

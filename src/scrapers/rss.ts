@@ -55,10 +55,24 @@ function parseAtomEntries($: cheerio.CheerioAPI, source: Source, fallbackIso: st
     const rawDate =
       $entry.find("published").first().text().trim() ||
       $entry.find("updated").first().text().trim();
-    const author = $entry.find("author > name").first().text().trim() || source.name;
-    const body =
+    const authors = $entry
+      .find("author > name")
+      .map((_, a) => $(a).text().trim())
+      .get()
+      .filter(Boolean);
+    const author = authors.join(", ") || source.name;
+    const rawBody =
       $entry.find("content").first().text().trim() ||
       $entry.find("summary").first().text().trim();
+    const body =
+      rawBody && !/<[a-z][\s\S]*>/i.test(rawBody)
+        ? rawBody
+            .split(/\r?\n/)
+            .map((line) => line.trim())
+            .filter(Boolean)
+            .map((line) => `<p>${line}</p>`)
+            .join("")
+        : rawBody;
 
     if (!title || !link) return;
 
