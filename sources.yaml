@@ -85,7 +85,7 @@ sources:
   # --- Controladoria-Geral da União (CGU) ---
   - id: "cgu-noticias"
     name: "CGU — Notícias (via Google News)"
-    url: "https://news.google.com/rss/search?q=site:gov.br/cgu/pt-br/assuntos/noticias&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    url: "https://news.google.com/rss/search?q=site:gov.br/cgu/pt-br/assuntos/noticias+when:30d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
     type: "gov"
     mode: "rss_feed"
 
