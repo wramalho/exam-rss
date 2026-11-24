@@ -92,10 +92,16 @@ sources:
 
   # --- Controladoria-Geral da União (CGU) ---
   - id: "cgu-noticias"
-    name: "CGU — Notícias"
-    url: "https://www.gov.br/cgu/pt-br/assuntos/noticias"
+    name: "CGU — Notícias (via Google News)"
+    url: "https://news.google.com/rss/search?q=site:gov.br/cgu/pt-br/assuntos/noticias&hl=pt-BR&gl=BR&ceid=BR:pt-419"
     type: "gov"
-    mode: "govbr_news"
+    mode: "rss_feed"
+
+  - id: "jota-cgu"
+    name: "JOTA — CGU"
+    url: "https://portal.jota.info/tudo-sobre/cgu/feed"
+    type: "rss"
+    mode: "rss_feed"
 
   - id: "cgu-base-conhecimento"
     name: "CGU — Base de Conhecimento"

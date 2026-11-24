@@ -8,7 +8,7 @@ const SourceSchema = z.object({
   name: z.string(),
   url: z.string().url(),
   type: z.enum(["tech_doc", "brazilian_law", "column", "blog", "rss", "gov"]),
-  mode: z.enum(["update_tracker", "drip_feed", "rss_feed", "jota_column", "govbr_news"]),
+  mode: z.enum(["update_tracker", "drip_feed", "rss_feed", "jota_column"]),
   css_selector: z.string().optional(),
   chunk_by: z.string().optional(),
   keywords: z.array(z.string()).optional(),

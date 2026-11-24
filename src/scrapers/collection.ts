@@ -27,7 +27,9 @@ export function selectNewFeedItems(
   previousSeenIds: string[] = []
 ): { items: FeedItem[]; seenIds: string[] } {
   const seenSet = new Set(previousSeenIds);
-  const unseen = candidates.filter((item) => !seenSet.has(item.id));
+  const unseen = candidates
+    .filter((item) => !seenSet.has(item.id))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const isInitialSeed = previousSeenIds.length === 0;
   const limit = source.max_items ?? (isInitialSeed ? 3 : 10);
