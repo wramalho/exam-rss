@@ -3,6 +3,8 @@ import fs from "fs/promises";
 import { loadConfig, loadState, saveState, FeedItem } from "./config.js";
 import { scrapeTechUpdate } from "./scrapers/tech.js";
 import { scrapeLawDripFeed } from "./scrapers/law.js";
+import { scrapeRssFeed } from "./scrapers/rss.js";
+import { scrapeJotaColumn } from "./scrapers/jota.js";
 import { generateRSS } from "./feed.js";
 import { fileURLToPath } from "url";
 
@@ -14,17 +16,17 @@ const CONFIG_PATH = path.join(ROOT_DIR, "sources.yaml");
 const STATE_PATH = path.join(ROOT_DIR, "state.json");
 const FEED_OUTPUT_PATH = path.join(ROOT_DIR, "public", "feed.xml");
 
-// Keep the last 50 items in the feed
-const MAX_FEED_ITEMS = 50;
+// Keep enough room for daily law articles plus columns and blogs
+const MAX_FEED_ITEMS = 100;
 
 async function main() {
   console.log("Starting RSS Feed Generator...");
-  
+
   const config = await loadConfig(CONFIG_PATH);
   const state = await loadState(STATE_PATH);
 
   const now = new Date().toISOString();
-  let newFeedItems: FeedItem[] = [];
+  const newFeedItems: FeedItem[] = [];
 
   for (const source of config.sources) {
     console.log(`Processing source: ${source.name}`);
@@ -33,7 +35,6 @@ async function main() {
     try {
       if (source.mode === "update_tracker") {
         const { content, newHash } = await scrapeTechUpdate(source, sourceState.lastHash);
-        
         state.sources[source.id] = { ...sourceState, lastHash: newHash };
 
         if (content) {
@@ -42,24 +43,19 @@ async function main() {
             id: `${source.id}-${newHash}`,
             title: `Update: ${source.name}`,
             link: source.url,
-            content: content,
+            content,
             date: now,
           });
         } else {
-           console.log(`-> No changes for ${source.name}.`);
+          console.log(`-> No changes for ${source.name}.`);
         }
-      } 
-      
-      else if (source.mode === "drip_feed") {
+      } else if (source.mode === "drip_feed") {
         const currentIndex = sourceState.currentIndex || 0;
         const { content, newIndex } = await scrapeLawDripFeed(source, currentIndex);
-        
         state.sources[source.id] = { ...sourceState, currentIndex: newIndex };
 
         if (content) {
           console.log(`-> Drip-feeding item index ${currentIndex} for ${source.name}.`);
-          
-          // Try to extract a title from the content (e.g. "Art. X")
           const titleMatch = content.replace(/\s+/g, " ").match(/Art\.\s*\d+(?:-[A-Z])?º?/i);
           const titleSuffix = titleMatch ? ` - ${titleMatch[0]}` : ` - Part ${currentIndex + 1}`;
 
@@ -67,13 +63,23 @@ async function main() {
             id: `${source.id}-chunk-${currentIndex}`,
             title: `${source.name}${titleSuffix}`,
             link: `${source.url}#chunk${currentIndex}`,
-            content: content,
+            content,
             date: now,
           });
         }
+      } else if (source.mode === "rss_feed") {
+        const { items, seenIds } = await scrapeRssFeed(source, sourceState.seenIds);
+        state.sources[source.id] = { ...sourceState, seenIds };
+        console.log(`-> Found ${items.length} new item(s) for ${source.name}.`);
+        newFeedItems.push(...items);
+      } else if (source.mode === "jota_column") {
+        const { items, seenIds } = await scrapeJotaColumn(source, sourceState.seenIds);
+        state.sources[source.id] = { ...sourceState, seenIds };
+        console.log(`-> Found ${items.length} new item(s) for ${source.name}.`);
+        newFeedItems.push(...items);
       }
     } catch (e) {
-       console.error(`Failed to process ${source.name}: `, e);
+      console.error(`Failed to process ${source.name}:`, e);
     }
   }
 
@@ -85,10 +91,10 @@ async function main() {
     seen.add(item.id);
     allItems.push(item);
   }
-  
+
   // Sort descending by date
   allItems.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  
+
   // Truncate to MAX_FEED_ITEMS
   allItems = allItems.slice(0, MAX_FEED_ITEMS);
 
@@ -96,12 +102,9 @@ async function main() {
   state.feedItems = allItems;
   await saveState(STATE_PATH, state);
 
-  // Create public dir if not exists
   await fs.mkdir(path.join(ROOT_DIR, "public"), { recursive: true });
-
-  // Generate XML
   await generateRSS(allItems, FEED_OUTPUT_PATH);
-  
+
   console.log("Finished successfully!");
 }
 

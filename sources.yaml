@@ -14,3 +14,78 @@ sources:
     mode: "drip_feed"
     # We want to chunk the law by articles (Art. 1º, Art. 2º, etc)
     chunk_by: "Art."
+
+  # --- Colunas do JOTA ---
+  - id: "jota-controle-publico"
+    name: "JOTA — Controle Público"
+    url: "https://www.jota.info/opiniao-e-analise/colunas/controle-publico"
+    type: "column"
+    mode: "jota_column"
+
+  - id: "jota-coluna-fiscal"
+    name: "JOTA — Coluna Fiscal"
+    url: "https://www.jota.info/opiniao-e-analise/colunas/coluna-fiscal"
+    type: "column"
+    mode: "jota_column"
+
+  - id: "jota-pauta-fiscal"
+    name: "JOTA — Pauta Fiscal"
+    url: "https://www.jota.info/opiniao-e-analise/colunas/pauta-fiscal"
+    type: "column"
+    mode: "jota_column"
+
+  - id: "jota-regulacao-tecnologias"
+    name: "JOTA — Regulação e Novas Tecnologias"
+    url: "https://www.jota.info/opiniao-e-analise/colunas/regulacao-e-novas-tecnologias"
+    type: "column"
+    mode: "jota_column"
+
+  # --- Feeds por tópico no JOTA ---
+  - id: "jota-tcu"
+    name: "JOTA — TCU"
+    url: "https://portal.jota.info/tudo-sobre/tcu/feed"
+    type: "rss"
+    mode: "rss_feed"
+
+  - id: "jota-lgpd"
+    name: "JOTA — LGPD"
+    url: "https://portal.jota.info/tudo-sobre/lgpd/feed"
+    type: "rss"
+    mode: "rss_feed"
+
+  - id: "jota-transparencia"
+    name: "JOTA — Transparência"
+    url: "https://portal.jota.info/tudo-sobre/transparencia/feed"
+    type: "rss"
+    mode: "rss_feed"
+
+  # --- Blogs e portais especializados (Finanças, Transparência, Controle e Privacidade) ---
+  - id: "observatorio-politica-fiscal"
+    name: "Observatório de Política Fiscal (FGV IBRE)"
+    url: "https://observatorio-politica-fiscal.ibre.fgv.br/rss.xml"
+    type: "blog"
+    mode: "rss_feed"
+
+  - id: "transparencia-internacional"
+    name: "Transparência Internacional — Brasil"
+    url: "https://transparenciainternacional.org.br/feed/"
+    type: "blog"
+    mode: "rss_feed"
+
+  - id: "fiquem-sabendo"
+    name: "Fiquem Sabendo (LAI e Transparência)"
+    url: "https://fiquemsabendo.com.br/feed/"
+    type: "blog"
+    mode: "rss_feed"
+
+  - id: "data-privacy-brasil"
+    name: "Data Privacy Brasil"
+    url: "https://www.dataprivacybr.org/feed/"
+    type: "blog"
+    mode: "rss_feed"
+
+  - id: "internetlab"
+    name: "InternetLab"
+    url: "https://internetlab.org.br/pt/feed/"
+    type: "blog"
+    mode: "rss_feed"

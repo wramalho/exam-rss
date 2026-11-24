@@ -1,17 +1,19 @@
 import { z } from "zod";
 import fs from "fs/promises";
 import yaml from "js-yaml";
-import path from "path";
 
 // --- Configuration Schema ---
 const SourceSchema = z.object({
   id: z.string(),
   name: z.string(),
   url: z.string().url(),
-  type: z.enum(["tech_doc", "brazilian_law"]),
-  mode: z.enum(["update_tracker", "drip_feed"]),
+  type: z.enum(["tech_doc", "brazilian_law", "column", "blog", "rss"]),
+  mode: z.enum(["update_tracker", "drip_feed", "rss_feed", "jota_column"]),
   css_selector: z.string().optional(),
   chunk_by: z.string().optional(),
+  keywords: z.array(z.string()).optional(),
+  max_items: z.number().int().positive().optional(),
+  fetch_full_content: z.boolean().optional(),
 });
 
 export const ConfigSchema = z.object({
@@ -36,6 +38,7 @@ export type FeedItem = z.infer<typeof FeedItemSchema>;
 const SourceStateSchema = z.object({
   lastHash: z.string().optional(),
   currentIndex: z.number().optional(), // For drip-feed
+  seenIds: z.array(z.string()).optional(), // For rss_feed and jota_column
 });
 
 export const StateSchema = z.object({
