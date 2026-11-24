@@ -2,7 +2,6 @@ import path from "path";
 import fs from "fs/promises";
 import { loadConfig, loadState, saveState, FeedItem } from "./config.js";
 import { scrapeTechUpdate } from "./scrapers/tech.js";
-import { scrapeLawDripFeed } from "./scrapers/law.js";
 import { scrapeRssFeed } from "./scrapers/rss.js";
 import { scrapeJotaColumn } from "./scrapers/jota.js";
 import { generateRSS } from "./feed.js";
@@ -16,7 +15,7 @@ const CONFIG_PATH = path.join(ROOT_DIR, "sources.yaml");
 const STATE_PATH = path.join(ROOT_DIR, "state.json");
 const FEED_OUTPUT_PATH = path.join(ROOT_DIR, "public", "feed.xml");
 
-// Keep enough room for daily law articles plus columns and blogs
+// Keep enough room for columns, blogs, and tech updates
 const MAX_FEED_ITEMS = 100;
 
 async function main() {
@@ -48,24 +47,6 @@ async function main() {
           });
         } else {
           console.log(`-> No changes for ${source.name}.`);
-        }
-      } else if (source.mode === "drip_feed") {
-        const currentIndex = sourceState.currentIndex || 0;
-        const { content, newIndex } = await scrapeLawDripFeed(source, currentIndex);
-        state.sources[source.id] = { ...sourceState, currentIndex: newIndex };
-
-        if (content) {
-          console.log(`-> Drip-feeding item index ${currentIndex} for ${source.name}.`);
-          const titleMatch = content.replace(/\s+/g, " ").match(/Art\.\s*\d+(?:-[A-Z])?º?/i);
-          const titleSuffix = titleMatch ? ` - ${titleMatch[0]}` : ` - Part ${currentIndex + 1}`;
-
-          newFeedItems.push({
-            id: `${source.id}-chunk-${currentIndex}`,
-            title: `${source.name}${titleSuffix}`,
-            link: `${source.url}#chunk${currentIndex}`,
-            content,
-            date: now,
-          });
         }
       } else if (source.mode === "rss_feed") {
         const { items, seenIds } = await scrapeRssFeed(source, sourceState.seenIds);
